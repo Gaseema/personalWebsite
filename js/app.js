@@ -1,4 +1,3 @@
-$(document).foundation();
 // Sticky Header
 $(window).scroll(function() {
 
@@ -8,10 +7,6 @@ $(window).scroll(function() {
         $('.main_h').removeClass('sticky');
     }
 });
-$("#os-phrases > h2")
-    .css('opacity', 1).lettering( 'words' )
-    .children( "span" ).lettering()
-    .children( "span" ).lettering(); 
 
 // Mobile Navigation
 $('.mobile-toggle').click(function() {
@@ -30,16 +25,16 @@ $('.main_h li a').click(function() {
 });
 
 // navigation scroll lijepo radi materem
-$('nav a').click(function(event) {
-    var id = $(this).attr("href");
-    var offset = 70;
-    var target = $(id).offset().top - offset;
-    $('html, body').animate({
-        scrollTop: target
-    }, 500);
-    event.preventDefault();
-});
-$("#os-phrases > h2")
-    .css('opacity', 1).lettering( 'words' )
-    .children( "span" ).lettering()
-    .children( "span" ).lettering(); 
+//$('nav a').click(function(event) {
+//    var id = $(this).attr("href");
+//    var offset = 70;
+//    var target = $(id).offset().top - offset;
+//    $('html, body').animate({
+//        scrollTop: target
+//    }, 500);
+//    event.preventDefault();
+//});
+//$("#os-phrases > h2")
+//    .css('opacity', 1).lettering( 'words' )
+//    .children( "span" ).lettering()
+//    .children( "span" ).lettering(); 
